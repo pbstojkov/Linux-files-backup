@@ -1,0 +1,13 @@
+[user]
+    email = pbstojkov@gmail.com
+    name = Petar
+
+[alias]
+    st = status -s
+    cm = commit -m
+    cma = commit -am
+
+    #list commands
+    lg = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short --graph
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --numstat
+    lol = log --oneline --graph --decorate
