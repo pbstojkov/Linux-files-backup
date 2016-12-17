@@ -1,4 +1,8 @@
 # to make the prompt a bit better
+case "$TERM" in
+    xterm|xterm-color|*-256color) color_prompt=yes;;
+esac
+
 get_git_branch() {
     # git branch 2> /dev/null | grep [*] | grep -o "[^* ]*"
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -24,3 +28,8 @@ esac
 function cd {
     builtin cd "$@" && ls -F
 }
+
+alias tar-unzip="tar -xvzf"
+alias cd..="cd .."
+alias py="python3"
+alias py2="python"
