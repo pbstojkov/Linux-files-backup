@@ -33,3 +33,15 @@ alias tar-unzip="tar -xvzf"
 alias cd..="cd .."
 alias py="python3"
 alias py2="python"
+alias ffs="./Projects/linux_Stuff/fixTouchpad.sh | ./xinitrc.sh | echo FIXED!"
+
+eval "$(thefuck --alias)"
+# You can use whatever you want as an alias, like for Mondays:
+eval "$(thefuck --alias FUCK)"
+
+alias light_ssh="sshpass -p tue321 ssh pi@192.168.0.107"
+# everytime you change the IP, a manual ssh to it needs to be done to add the host to the known hosts list.
+alias camera_ssh="sshpass -p tue321 ssh pi@192.168.0.109"
+
+# to fix the annoying unreadable dir names
+eval "$(dircolors ~/.dircolors)";
