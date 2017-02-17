@@ -11,3 +11,5 @@
     lg = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short --graph
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --numstat
     lol = log --oneline --graph --decorate
+[core]
+	autocrlf = true

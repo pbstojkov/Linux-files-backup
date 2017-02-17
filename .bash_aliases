@@ -33,7 +33,7 @@ alias tar-unzip="tar -xvzf"
 alias cd..="cd .."
 alias py="python3"
 alias py2="python"
-alias ffs="./Projects/linux_Stuff/fixTouchpad.sh | ./xinitrc.sh | echo FIXED!"
+alias ffs="~/Projects/linux_Stuff/fixTouchpad.sh | ~/xinitrc.sh | echo FIXED!"
 
 eval "$(thefuck --alias)"
 # You can use whatever you want as an alias, like for Mondays:
