@@ -45,3 +45,8 @@ alias camera_ssh="sshpass -p tue321 ssh pi@192.168.0.109"
 
 # to fix the annoying unreadable dir names
 eval "$(dircolors ~/.dircolors)";
+
+# volume change through ssh made easy
+set_vol() {
+    pactl set-sink-volume 1 $1%
+}
