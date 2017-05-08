@@ -8,7 +8,7 @@ function ALARMA {
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 export DISPLAY=:0.0
 
-if free | awk 'FNR == 2 {exit $7/$2 <= 0.15 ? 0 : 1}'
+if free | awk 'FNR == 2 {exit $7/$2 <= 0.20 ? 0 : 1}'
 then
 	ALARMA
 fi

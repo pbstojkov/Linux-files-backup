@@ -1,0 +1,4 @@
+keycode 110 = Prior NoSymbol Prior
+keycode 112 = Home NoSymbol Home
+keycode 115 = Next NoSymbol Next
+keycode 117 = End NoSymbol End
