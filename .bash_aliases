@@ -56,3 +56,10 @@ eval "$(dircolors ~/.dircolors)";
 set_vol() {
     pactl set-sink-volume 1 $1%
 }
+
+if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
+    fortune | cowsay
+fi
+
+# this way you can pipe things to the clipboard like echo Hello | clipboard 
+alias clipboard='xclip -selection c'
