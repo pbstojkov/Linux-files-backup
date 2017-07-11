@@ -34,7 +34,7 @@ alias cd..="cd .."
 alias py="python3"
 alias py2="python"
 alias ffs="~/Projects/linux_Stuff/fixTouchpad.sh | ~/Projects/linux_Stuff/xinitrc.sh | echo FIXED!"
-alias cfind="grep -r --include=*.h --include=*.c "
+alias cfind="grep -rn --include=*.h --include=*.c "
 
 # 'calculator'
 =() {
@@ -57,9 +57,19 @@ set_vol() {
     pactl set-sink-volume 1 $1%
 }
 
-if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
-    fortune | cowsay
-fi
+# if [ -x /usr/games/cowsay -a -x /usr/games/fortune ]; then
+#     fortune | cowsay
+# fi
 
 # this way you can pipe things to the clipboard like echo Hello | clipboard 
 alias clipboard='xclip -selection c'
+
+logs() {
+    subl /home/rein/Projects/BigImpact/FakeServer/archive/07_06_2017_21-20-28/logs/$1;
+    subl /home/rein/Projects/BigImpact/FakeServer/archive/31_05_2017_13-35-09/logs/$1;
+}
+
+imgs() {
+    google-chrome /home/rein/Projects/BigImpact/FakeServer/archive/07_06_2017_21-20-28/$1;
+    google-chrome /home/rein/Projects/BigImpact/FakeServer/archive/31_05_2017_13-35-09/$1;
+}
